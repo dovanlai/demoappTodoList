@@ -97,11 +97,11 @@
 		2BD5408C202EF63200584FB4 /* demoappTodoList */ = {
 			isa = PBXGroup;
 			children = (
+				2BD540BD202F123300584FB4 /* model */,
+				2BD540BC202F121900584FB4 /* controler */,
+				2BD540BB202F120300584FB4 /* view */,
 				2BD5408D202EF63200584FB4 /* AppDelegate.swift */,
-				2BD5408F202EF63200584FB4 /* TodoListViewController.swift */,
-				2BD54091202EF63200584FB4 /* Main.storyboard */,
 				2BD54094202EF63200584FB4 /* Assets.xcassets */,
-				2BD54096202EF63200584FB4 /* LaunchScreen.storyboard */,
 				2BD54099202EF63200584FB4 /* Info.plist */,
 			);
 			path = demoappTodoList;
@@ -123,6 +123,30 @@
 				2BD540AF202EF63300584FB4 /* Info.plist */,
 			);
 			path = demoappTodoListUITests;
+			sourceTree = "<group>";
+		};
+		2BD540BB202F120300584FB4 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				2BD54091202EF63200584FB4 /* Main.storyboard */,
+				2BD54096202EF63200584FB4 /* LaunchScreen.storyboard */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		2BD540BC202F121900584FB4 /* controler */ = {
+			isa = PBXGroup;
+			children = (
+				2BD5408F202EF63200584FB4 /* TodoListViewController.swift */,
+			);
+			path = controler;
+			sourceTree = "<group>";
+		};
+		2BD540BD202F123300584FB4 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

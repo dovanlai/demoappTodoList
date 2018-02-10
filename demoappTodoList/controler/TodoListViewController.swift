@@ -41,5 +41,21 @@ class TodoListViewController: UITableViewController {
         tableView.deselectRow(at: indexPath, animated: true)
     }
 
+    @IBAction func btnAdd(_ sender: Any) {
+        var mytext = UITextField()
+        let alert = UIAlertController(title: "add new item for todolist", message: "", preferredStyle: .alert)
+        let action = UIAlertAction(title: "add", style: .default) { (action) in
+           // print(mytext.text)
+            self.arr.append(mytext.text!)
+            self.tableView.reloadData()
+            
+        }
+        alert.addTextField { (alerTextfield) in
+            alerTextfield.placeholder = "create new item"
+            mytext = alerTextfield
+        }
+        alert.addAction(action)
+        present(alert, animated: true, completion: nil)
+    }
 }
 
